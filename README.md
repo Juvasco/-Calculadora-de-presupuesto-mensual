@@ -31,14 +31,13 @@ El sistema es una aplicación web sencilla accesible desde computadoras o dispos
 
 ## 4. Tabla de pruebas
 
-| ID | Prueba | Tipo | Requerimientos | Datos de entrada | Resultados esperados | Resultados obtenidos |
-|----|--------|------|----------------|------------------|----------------------|----------------------|
-| PU-01 | Unitarias | RF01 | Fecha 15/11/2025, Salario 1500 | Registra ingreso y mensaje exitoso | Registrado correctamente (1.8s) |
-| PU-02 | Unitarias | RF02 | Supermercado 350.75 | Actualiza balance en menos de 2s | Actualizado (1.6s) |
-| PU-03 | Unitarias | RF04 | Ingresos 1500, Gastos 350.75 | Balance: 1149.25 | Calculado correctamente |
-| PV-01 | Validaciones | RF06 | Editar monto | Actualiza balance y muestra mensaje | Editado correctamente |
-| PV-02 | Validaciones | RF03 | Registrar sin categoría | Mensaje de error | Validación correcta |
-| PV-03 | Validaciones | RF05 | Resumen mensual | Muestra totales y desglose | Correcto |
+ID Prueba | Tipo de pruebas | Requerimientos asociados | Datos de entrada | Resultados esperados | Resultados obtenidos
+---------|----------------|-------------------------|------------------|---------------------|---------------------
+PU-01 | Unitarias | RF01 - Registro de ingresos | Fecha: 15/11/2025, Descripción: "Salario", Monto: 1500.00, Categoría: "Salario" | El sistema registra el ingreso y muestra mensaje "Ingreso registrado exitosamente" en menos de 2 segundos. | Registrado correctamente. Tiempo: 1.8 s
+PU-02 | Unitarias | RF02 - Registro de gastos | Fecha: 16/11/2025, Descripción: "Supermercado", Monto: 350.75, Categoría: "Alimentación" | El sistema registra el gasto y actualiza el balance en menos de 2 segundos. | Gasto registrado correctamente. Balance actualizado. Tiempo: 1.6 s
+PU-03 | Unitarias | RF04 - Cálculo automático de balance | Ingresos: $1500.00, Gastos: $350.75 | El sistema calcula y muestra el balance correcto con precisión de 2 decimales en menos de 2 segundos. | Balance calculado correctamente: $1149.25
+PV-01 | Validaciones | RF06 - Edición y eliminación de transacciones | Transacción ID #003, Acción: Editar monto de $350.75 a $400.00 y luego eliminar | El sistema actualiza la transacción correctamente, muestra mensaje "Transacción actualizada exitosamente" y permite eliminarla sin errores. | Transacción editada y eliminada correctamente. Mensajes mostrados según lo esperado.
+PV-02 | Validaciones | RF05 - Visualización de resumen mensual | Acción: Consultar resumen del mes actual | El sistema muestra el resumen con totales de ingresos, gastos, balance y categorías, sin errores. | Resumen visualizado correctamente. Datos completos y ordenados cronológicamente.
 
 ## 5. Tipos de mantenimiento propuestos
 
